@@ -16,7 +16,7 @@ const Specials = () => {
           <TabList>
             <Tab className="lg:text-xl">Деятельность</Tab>
             <Tab className="lg:text-xl">Лаборатория</Tab>
-            <Tab className="lg:text-xl">География</Tab>
+            <Tab className="lg:text-xl">Условия</Tab>
           </TabList>
 
           <TabPanels>

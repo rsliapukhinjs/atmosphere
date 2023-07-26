@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Specials from "@/components/Specials";
+import Cta from "@/components/Cta";
 
 const Home = () => {
   return (
     <div className="flex flex-col items-center">
-      <main className="min-h-screen w-full flex flex-col gap-8 items-center justify-center text-sky-700 bg-red-100">
+      <main className="min-h-screen w-full flex flex-col gap-8 items-center justify-center text-sky-800 bg-[url('../public/hero.jpg')] bg-cover bg-center">
         <h1 className="text-5xl lg:text-7xl uppercase font-bold">
           ОДО &laquo;Атмосфера&raquo;
         </h1>
@@ -18,6 +19,7 @@ const Home = () => {
         </Link>
       </main>
       <Specials />
+      <Cta />
     </div>
   );
 };
