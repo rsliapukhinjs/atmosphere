@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Specials from "@/components/Specials";
 
 const Home = () => {
@@ -10,9 +11,11 @@ const Home = () => {
         <span className="text-xl lg:text-2xl">
           Широкий спектр экологических услуг
         </span>
-        <button className="inline-block px-4 py-2 bg-sky-600 text-white hover:bg-sky-800 rounded-lg">
-          Смотреть
-        </button>
+        <Link href="/service">
+          <button className="inline-block px-4 py-2 bg-sky-600 text-white hover:bg-sky-800 rounded-lg">
+            Смотреть
+          </button>
+        </Link>
       </main>
       <Specials />
     </div>

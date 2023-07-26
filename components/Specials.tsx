@@ -13,10 +13,10 @@ const Specials = () => {
     <>
       <section className="p-8 text-sky-800">
         <Tabs align="center">
-          <TabList className="lg:text-xl">
-            <Tab>Деятельность</Tab>
-            <Tab>Лаборатория</Tab>
-            <Tab>География</Tab>
+          <TabList>
+            <Tab className="lg:text-xl">Деятельность</Tab>
+            <Tab className="lg:text-xl">Лаборатория</Tab>
+            <Tab className="lg:text-xl">География</Tab>
           </TabList>
 
           <TabPanels>
