@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import Specials from "@/components/Specials";
 
 const Home = () => {
