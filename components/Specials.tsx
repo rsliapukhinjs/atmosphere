@@ -5,13 +5,15 @@ import spec from "../public/spec.jpg";
 import lab from "../public/lab.jpg";
 import map from "../public/map.jpg";
 
+import Link from "next/link";
+
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
-import { Button, ButtonGroup } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 
 const Specials = () => {
   return (
     <>
-      <section className="p-8 text-sky-800">
+      <section id="specials" className="p-8 text-sky-800">
         <Tabs align="center">
           <TabList>
             <Tab className="lg:text-xl">Деятельность</Tab>
@@ -26,10 +28,13 @@ const Specials = () => {
                   ОДО &laquo;Атмосфера&raquo; – крупнейшее в Гомельской области
                   предприятие, оказывающее комплексные услуги в области охраны
                   окружающей среды и охраны труда, с опытом работы в данной
-                  области более 30 лет.
-                  <Button className="bg-sky-600 text-white hover:bg-sky-800 font-normal">
-                    Узнать больше
-                  </Button>
+                  области более 30 лет. Организация имеет штат специалистов с
+                  большим опытом в сфере экологии и природоохранных мероприятий.
+                  <Link href="/servies">
+                    <Button className="bg-sky-600 text-white hover:bg-sky-800 font-normal">
+                      Узнать больше
+                    </Button>
+                  </Link>
                 </div>
                 <Image src={spec} alt="specialist" className="w-full" />
               </article>
@@ -42,10 +47,16 @@ const Specials = () => {
                   лабораторию, аккредитованную более чем на 100
                   физико-химических показателей, с широким перечнем оборудования
                   для исследования выбросов загрязняющих веществ в атмосферный
-                  воздух.
-                  <Button className="bg-sky-600 text-white hover:bg-sky-800 font-normal">
-                    Узнать больше
-                  </Button>
+                  воздух с преобладанием точных методов и современных методик
+                  измерений, реализованных на аппаратных средствах газовой
+                  хроматографии, спектрофотометрии, гравиметрии, позволяющих
+                  получать корректные и достоверные результаты проводимых
+                  исследований.
+                  <Link href="/lab">
+                    <Button className="bg-sky-600 text-white hover:bg-sky-800 font-normal">
+                      Узнать больше
+                    </Button>
+                  </Link>
                 </div>
               </article>
             </TabPanel>
@@ -56,9 +67,11 @@ const Specials = () => {
                   Беларусь. Выполняем работы на объектах любой сложности и в
                   удобные для заказчиков сроки. В списке наших клиентов
                   находятся крупнейшие промышленные предприятия страны.
-                  <Button className="bg-sky-600 text-white hover:bg-sky-800 font-normal">
-                    Узнать больше
-                  </Button>
+                  <Link href="/services">
+                    <Button className="bg-sky-600 text-white hover:bg-sky-800 font-normal">
+                      Узнать больше
+                    </Button>
+                  </Link>
                 </div>
                 <Image src={map} alt="map" className="w-full" />
               </article>

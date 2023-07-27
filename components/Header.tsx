@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import logo from "../public/logo.webp";
-
 import Link from "next/link";
+
+import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 
 const Header = () => {
   return (
@@ -9,16 +12,43 @@ const Header = () => {
       <Link href="/">
         <Image src={logo} alt="logo" width={125} />
       </Link>
-      <nav className="flex gap-4 uppercase text-sm pt-2">
-        <Link href="/service">
-          <span>Услуги</span>
-        </Link>
-        <Link href="/info">
-          <span>Информация</span>
-        </Link>
-        <Link href="/contacts">
-          <span>Контакты</span>
-        </Link>
+      <nav className="flex gap-8 text-sm uppercase pt-2">
+        <Menu>
+          <MenuButton>УСЛУГИ</MenuButton>
+          <MenuList>
+            <Link href="/services">
+              <MenuItem>Перечень услуг</MenuItem>
+            </Link>
+            <Link href="/lab">
+              <MenuItem>Лаборатория</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
+        <Menu>
+          <MenuButton>ИНФО</MenuButton>
+          <MenuList>
+            <Link href="/docs">
+              <MenuItem>Документы</MenuItem>
+            </Link>
+            <Link href="/history">
+              <MenuItem>История</MenuItem>
+            </Link>
+            <Link href="/clients">
+              <MenuItem>Клиенты</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
+        <Menu>
+          <MenuButton>КОНТАКТЫ</MenuButton>
+          <MenuList>
+            <Link href="/team">
+              <MenuItem>Команда</MenuItem>
+            </Link>
+            <Link href="/address">
+              <MenuItem>Адрес</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
       </nav>
     </header>
   );

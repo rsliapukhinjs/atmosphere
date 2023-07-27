@@ -1,8 +1,8 @@
 const Cta = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-8 p-8 text-sky-800">
+    <section className="w-full flex flex-col items-center gap-8 p-8 text-sky-800 bg-sky-50">
       <h2 className="text-3xl upperacse font-bold">Свяжитесь с нами!</h2>
-      <form className="w-3/4 p-8 flex flex-col items-start gap-4 bg-sky-50 rounded-lg">
+      <form className="w-3/4 p-8 flex flex-col items-start gap-4 rounded-lg">
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="name">Ваше имя:</label>
           <input type="text" id="name" />
