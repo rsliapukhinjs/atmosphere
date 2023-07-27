@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FaEnvelope, FaPhone, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaPhoneSquare, FaArrowCircleUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -32,14 +32,14 @@ const Footer = () => {
             <span>Контакты</span>
           </Link>
         </div>
-        <div className="w-full flex lg:flex-col gap-8 items-center lg:items-start justify-center lg:text-xl">
-          <div className="flex items-center gap-4">
-            <FaPhone className="inline" size="30" />
-            +375-(44)-702-30-93
-          </div>
-          <div className="flex items-center gap-4">
+        <div className="w-full flex lg:flex-col gap-8 items-center lg:items-start justify-center text-sm md:text-lg lg:text-xl">
+          <div className="flex items-center gap-4 cursor-pointer">
             <FaEnvelope className="inline" size="30" />
-            atmosfera_gomel@mail.ru
+            <span className="hidden sm:inline">atmosfera_gomel@mail.ru</span>
+          </div>
+          <div className="flex items-center gap-4 cursor-pointer">
+            <FaPhoneSquare className="inline" size="30" />
+            <span className="hidden sm:inline">+375-(44)-702-30-93</span>
           </div>
         </div>
       </div>
