@@ -12,14 +12,19 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const ServicesList = () => {
   return (
-    <div className="w-full lg:w-3/4 bg-read-100 p-8">
+    <div className="w-full lg:w-3/4 bg-read-100 lg:p-8">
       <Accordion allowMultiple>
         <AccordionItem>
           <h2 className="py-4">
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
-              <Box as="span" flex="1" textAlign="left" className="text-3xl">
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-lg lg:text-3xl"
+              >
                 Инвентаризация и нормативы ПДВ
               </Box>
               <AccordionIcon />
@@ -66,7 +71,12 @@ const ServicesList = () => {
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
-              <Box as="span" flex="1" textAlign="left" className="text-3xl">
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-lg lg:text-3xl"
+              >
                 Вентсистемы и ГОУ
               </Box>
               <AccordionIcon />
@@ -113,7 +123,12 @@ const ServicesList = () => {
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
-              <Box as="span" flex="1" textAlign="left" className="text-3xl">
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-lg lg:text-3xl"
+              >
                 Проектная документация
               </Box>
               <AccordionIcon />
@@ -161,7 +176,12 @@ const ServicesList = () => {
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
-              <Box as="span" flex="1" textAlign="left" className="text-3xl">
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-lg lg:text-3xl"
+              >
                 СЗЗ, расчеты рассеивания и шума, НМУ
               </Box>
               <AccordionIcon />
@@ -238,7 +258,12 @@ const ServicesList = () => {
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
-              <Box as="span" flex="1" textAlign="left" className="text-3xl">
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-lg lg:text-3xl"
+              >
                 Обращение с отходами
               </Box>
               <AccordionIcon />
