@@ -13,12 +13,13 @@ const Home = () => {
         <span className="text-lg sm:text-2xl lg:text-4xl">
           Широкий спектр экологических услуг
         </span>
-        <Link href="#specials">
+        <Link href="#anker">
           <button className="flex items-center gap-2 px-4 py-2 bg-sky-600 text-white hover:bg-sky-800 rounded-lg">
             Смотреть <FaArrowCircleDown className="inline text-xl" />
           </button>
         </Link>
       </main>
+      <div id="anker"></div>
       <Specials />
       <Cta />
     </div>

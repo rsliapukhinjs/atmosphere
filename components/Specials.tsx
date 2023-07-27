@@ -13,7 +13,7 @@ import { Button } from "@chakra-ui/react";
 const Specials = () => {
   return (
     <>
-      <section id="specials" className="p-8 text-sky-800">
+      <section className="p-8 text-sky-800">
         <Tabs align="center">
           <TabList>
             <Tab className="lg:text-xl">Деятельность</Tab>
