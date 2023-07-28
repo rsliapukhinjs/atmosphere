@@ -8,7 +8,7 @@ import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 
 const Header = () => {
   return (
-    <header className="w-full p-4 lg:px-16 text-sky-700 flex items-center justify-between shadow-lg sticky top-0 bg-white z-50">
+    <header className="w-full p-4 lg:px-16 text-sky-800 flex items-center justify-between shadow-lg sticky top-0 bg-white z-50">
       <Link href="/">
         <Image src={logo} alt="logo" width={125} />
       </Link>
