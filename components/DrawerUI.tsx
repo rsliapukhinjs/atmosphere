@@ -47,9 +47,6 @@ const DrawerUI = () => {
                 <Link href="/history">
                   <h3>История</h3>
                 </Link>
-                <Link href="/clients">
-                  <h3>Клиенты</h3>
-                </Link>
               </li>
               <li className="flex flex-col gap-4">
                 <h2 className="uppercase text-xl border-b-2">Контакты</h2>
