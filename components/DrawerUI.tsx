@@ -17,14 +17,14 @@ import {
 const DrawerUI = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <>
+    <aside>
       <FaBars
         className="text-2xl text-sly-800 cursor-pointer"
         onClick={onOpen}
       />
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
-        <DrawerContent>
+        <DrawerContent className="text-sky-800">
           <DrawerCloseButton />
           <DrawerHeader>Что вас интересует?</DrawerHeader>
 
@@ -66,7 +66,7 @@ const DrawerUI = () => {
           <DrawerFooter></DrawerFooter>
         </DrawerContent>
       </Drawer>
-    </>
+    </aside>
   );
 };
 

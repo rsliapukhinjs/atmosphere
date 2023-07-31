@@ -31,7 +31,7 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex bg-[url('../public/docs.jpg')] bg-cover bg-center">
+            <article className="flex bg-[url('../public/services/docs.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center p-8 gap-8">
                 <li className="flex flex-col gap-4 bg-white bg-opacity-80 p-8">
                   <div className="flex items-center gap-8">
@@ -133,7 +133,7 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex flex-row-reverse bg-[url('../public/vent.jpg')] bg-cover bg-center">
+            <article className="flex flex-row-reverse bg-[url('../public/services/vent.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
                 <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
@@ -252,7 +252,7 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex bg-[url('../public/project.jpg')] bg-cover bg-center">
+            <article className="flex bg-[url('../public/services/project.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
                 <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
@@ -328,7 +328,7 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex flex-row-reverse bg-[url('../public/zone.jpg')] bg-cover bg-center">
+            <article className="flex flex-row-reverse bg-[url('../public/services/zone.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
                 <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
@@ -368,7 +368,7 @@ const ServicesList = () => {
                     <FaCheckCircle className="inline" /> Проведение расчетов
                     шума (акустический расчет)
                   </div>
-                  <p className="text-sm">
+                  <p className="text-sm flex flex-col gap-2">
                     <p>
                       Расчет уровня шума (акустический расчет) выполняется в
                       проектной документации строительства жилых,
@@ -412,7 +412,7 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex bg-[url('../public/scrap.jpg')] bg-cover bg-center">
+            <article className="flex bg-[url('../public/services/scrap.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
                 <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">

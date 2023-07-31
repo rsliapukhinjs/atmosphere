@@ -39,9 +39,6 @@ const NavMenu = () => {
           <Link href="/history">
             <MenuItem>История</MenuItem>
           </Link>
-          <Link href="/clients">
-            <MenuItem>Клиенты</MenuItem>
-          </Link>
         </MenuList>
       </Menu>
       <Menu>

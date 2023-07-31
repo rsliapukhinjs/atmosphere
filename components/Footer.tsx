@@ -20,9 +20,6 @@ const Footer = () => {
           <Link href="/history">
             <span>История</span>
           </Link>
-          <Link href="/clients">
-            <span>Клиенты</span>
-          </Link>
         </div>
         <div className="hidden lg:flex flex-col gap-4 items-start">
           <Link href="/team">

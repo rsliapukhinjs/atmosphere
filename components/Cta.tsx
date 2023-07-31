@@ -1,7 +1,7 @@
 const Cta = () => {
   return (
-    <section className="w-full flex justify-center p-16 text-sky-50 bg-sky-100">
-      <form className="w-full lg:w-2/3 p-8 flex flex-col items-start gap-2 rounded-lg text-md lg:text-lg bg-sky-800">
+    <section className="w-full flex items-center justify-center p-16 bg-sky-800 text-sky-50">
+      <form className="w-full lg:w-2/3 p-8 flex flex-col items-start gap-4 rounded-lg text-md lg:text-lg border-2">
         <h2 className="text-xl lg:text-3xl font-bold">
           Свяжитесь с нами сейчас!
         </h2>

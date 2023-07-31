@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import spec from "../public/spec.jpg";
-import lab from "../public/lab.jpg";
-import map from "../public/map.jpg";
+import spec from "../public/roulette/spec.jpg";
+import lab from "../public/roulette/lab.jpg";
+import map from "../public/roulette/map.jpg";
 
 import Link from "next/link";
 

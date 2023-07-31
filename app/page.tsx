@@ -2,6 +2,7 @@ import Link from "next/link";
 import Specials from "@/components/Specials";
 import Cta from "@/components/Cta";
 import ButtonU from "@/utils/ButtonU";
+import Clients from "@/components/Clients";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         </Link>
       </main>
       <Specials />
+      <Clients />
       <Cta />
     </div>
   );
