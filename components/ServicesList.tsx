@@ -10,13 +10,6 @@ import {
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 
-import Image from "next/image";
-import docs from "../public/docs.jpg";
-import vent from "../public/vent.jpg";
-import project from "../public/project.jpg";
-import zone from "../public/zone.jpg";
-import scrap from "../public/scrap.jpg";
-
 const ServicesList = () => {
   return (
     <div className="w-full lg:w-3/4 bg-read-100 lg:p-8">
@@ -38,42 +31,87 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex">
+            <article className="flex bg-[url('../public/docs.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center p-8 gap-8">
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 bg-white bg-opacity-80 p-8">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Инвентаризация выбросов
                     загрязняющих веществ
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      Инвентаризация выбросов загрязняющих веществ в атмосферный
+                      воздух – комплекс мероприятий, выполняемых
+                      природопользователем, включающий выявление, проверку и
+                      документальное подтверждение:
+                    </p>
+                    <ul className="list-disc p-4">
+                      <li>
+                        наличия, местоположения, количества, состояния
+                        источников выделения загрязняющих веществ и источников
+                        выбросов;
+                      </li>
+                      <li>
+                        количественного и качественного состава выбросов
+                        загрязняющих веществ в атмосферный воздух;
+                      </li>
+                      <li>
+                        оснащения газоочистными установками (ГОУ) организованных
+                        стационарных источников выбросов и соответствие
+                        фактических параметров работы ГОУ проектным решениям;
+                      </li>
+                      <li>
+                        соответствия технологических процессов и методов
+                        производства продукции и энергии, выполнения работ
+                        (оказания услуг) наилучшим доступным техническим
+                        методам.
+                      </li>
+                    </ul>
+                    <p>
+                      Вся эта и иная необходимая информация содержится в Акте
+                      инвентаризации выбросов загрязняющих веществ в атмосферный
+                      воздух, который является основанием для подтверждения,
+                      корректировки или разработки нормативов допустимых
+                      выбросов загрязняющих веществ в атмосферный воздух
+                      (нормативов ПДВ).
+                    </p>
+                  </div>
                 </li>
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     нормативов допустимых выбросов
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      Нормативы допустимых выбросов загрязняющих веществ в
+                      атмосферный воздух - максимальные величины поступления
+                      загрязняющих веществ в атмосферный воздух, при соблюдении
+                      которых обеспечиваются нормативы качества атмосферного
+                      воздуха.
+                    </p>
+                    <p>
+                      Порядок установления нормативов допустимых выбросов
+                      загрязняющих веществ в атмосферный воздух, разработки
+                      проекта нормативов допустимых выбросов загрязняющих
+                      веществ в атмосферный воздух регламентирован Инструкцией о
+                      порядке установления нормативов допустимых выбросов
+                      загрязняющих веществ в атмосферный воздух, утвержденной
+                      Постановлением Министерства природных ресурсов и охраны
+                      окружающей среды Республики Беларусь.
+                    </p>
+                    <p>
+                      Нормативы допустимых выбросов загрязняющих веществ в
+                      атмосферный воздух (временные нормативы допустимых
+                      выбросов загрязняющих веществ в атмосферный воздух)
+                      устанавливаются для стационарных источников выбросов и
+                      (или) совокупности стационарных источников выбросов,
+                      сгруппированных по отдельным цехам и производствам
+                      природопользователя.
+                    </p>
+                  </div>
                 </li>
               </ul>
-              <div className="flex-1 hidden lg:block">
-                <Image src={docs} alt="documents" />
-              </div>
             </article>
           </AccordionPanel>
         </AccordionItem>
@@ -95,42 +133,104 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex flex-row-reverse">
+            <article className="flex flex-row-reverse bg-[url('../public/vent.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Паспортизация и
                     аэродинамические испытания вентистем
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      Вентиляционная система - комплекс вентиляционных установок
+                      и устройств естественной вентиляции, обслуживающих
+                      отдельное помещение или здание в целом;
+                    </p>
+
+                    <p>
+                      Вентиляционная установка - совокупность вентиляционных
+                      устройств, оборудованных отдельным вентилятором или другим
+                      специальным оснащением для перемещения воздуха;
+                    </p>
+
+                    <p>
+                      Паспорт вентиляционной установки – документ, содержащий
+                      следующую информацию:
+                    </p>
+
+                    <ul className="list-disc p-4">
+                      <li>
+                        назначение вентиляционной установки, ее
+                        месторасположение и режим работы;
+                      </li>
+                      <li>
+                        технические характеристики компонентов вентиляционной
+                        установки (вентилятор, электродвигатель,
+                        воздухонагреватель, воздухоохладитель, увлажнитель
+                        воздуха и др.);
+                      </li>
+                      <li>
+                        таблица данных о расходе воздуха и всевозможных
+                        отклонениях от предусмотренных в проекте показателей;
+                      </li>
+                      <li>аэродинамическая схема;</li>
+                      <li>
+                        заключение об эффективности работы вентиляционной
+                        установки на основании результатов аэродинамических
+                        испытаний.
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка паспортов и
                     проверка эффективности ГОУ
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      Газоочистная установка (ГОУ) - сооружение и (или)
+                      оборудование, предназначенные для очистки газов, отходящих
+                      от источников выделения загрязняющих веществ, посредством
+                      физических, химических, биологических и других методов
+                      улавливания, нейтрализации, обезвреживания загрязняющих
+                      веществ.
+                    </p>
+                    <p>
+                      Паспорт газоочистной установки – обязательный для каждой
+                      газоочистной установки документ (книга в жесткой обложке)
+                    </p>
+                    <p>
+                      При эксплуатации ГОУ осуществляется контроль показателей
+                      работы ГОУ инструментальными методами ежегодно, за
+                      исключением ГОУ:
+                    </p>
+                    <ul className="list-disc p-4">
+                      <li>
+                        предназначенных для очистки от загрязняющих веществ 1-го
+                        класса опасности, контроль которых проводится не реже
+                        двух раз в год;
+                      </li>
+                      <li>
+                        в состав которых включены аппараты очистки газа групп Э
+                        (электрические фильтры), Х (аппараты сорбционной
+                        (химической, биологической) очистки газа от газообразных
+                        загрязняющих веществ) и Т (аппараты термического,
+                        термокаталитического и каталитического способов
+                        обезвреживания газообразных загрязняющих веществ) и
+                        (или) предназначенных для очистки от загрязняющих
+                        веществ 2-го класса опасности, контроль которых
+                        проводится не реже двух раз в год;
+                      </li>
+                      <li>
+                        установленных внутри помещения и не имеющих выхода в
+                        атмосферный воздух (промышленные пылесосы и иные
+                        фильтры).
+                      </li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
-              <div className="flex-1 hidden lg:block">
-                <Image src={vent} alt="ventilation" />
-              </div>
             </article>
           </AccordionPanel>
         </AccordionItem>
@@ -152,43 +252,61 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex">
+            <article className="flex bg-[url('../public/project.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка разделов
                     &laquo;Охрана окружающей среды&raquo; в составе проектной
                     документации
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      Разработка раздела «Охрана окружающей среды» в составе
+                      предпроектной и проектной документации – оценка
+                      экологического состояния территории с позиций возможности
+                      размещения проектируемого объекта и предварительный
+                      качественный прогноз возможных изменений окружающей среды
+                      при реализации намечаемого строительства и его негативных
+                      последствий.
+                    </p>
+
+                    <p>
+                      Раздел «Охрана окружающей среды» является неотъемлемой
+                      частью проектов строительства и при отсутствии
+                      согласованной в установленном порядке нормативной
+                      документации объект не будет введен в эксплуатацию. Раздел
+                      ООС разрабатывается для предпроектной и проектной
+                      документации, для нового строительства, модернизации,
+                      реконструкции действующих предприятий.
+                    </p>
+                  </div>
                 </li>
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Составление
                     экологических паспортов предприятий
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
+                  <p className="text-sm">
+                    <p>
+                      Экологический паспорт предприятия - документ, содержащий
+                      информацию об уровне использования природопользователем
+                      ресурсов(природных, вторичных и др.) и степени воздействия
+                      его производств на окружающую природную среду, а также
+                      сведения о разрешениях на право
+                      природопользования,нормативах воздействий и размерах
+                      платежей за загрязнение окружающей природной среды и
+                      использование природных ресурсов.
+                    </p>
+
+                    <p>
+                      Экологический паспорт предприятия в обязательном порядке
+                      ведут юридические лица и индивидуальные предприниматели,
+                      эксплуатирующие здания, сооружения и иные объекты.
+                    </p>
                   </p>
                 </li>
               </ul>
-              <div className="flex-1 hidden lg:block">
-                <Image src={project} alt="project" />
-              </div>
             </article>
           </AccordionPanel>
         </AccordionItem>
@@ -204,78 +322,75 @@ const ServicesList = () => {
                 textAlign="left"
                 className="text-lg lg:text-3xl"
               >
-                СЗЗ, расчеты рассеивания и шума, НМУ
+                Расчет СЗЗ, расчет шума, НМУ
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex flex-row-reverse">
+            <article className="flex flex-row-reverse bg-[url('../public/zone.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     санитарно-защитных зон предприятий
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
-                </li>
-                <li className="flex flex-col gap-4">
-                  <div className="flex items-center gap-8">
-                    <FaCheckCircle className="inline" /> Проведение расчетов
-                    рассеивания загрязняющих веществ в атмосфере
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      Санитарно-защитная зона (СЗЗ) - территория с особым
+                      режимом использования, размер которой обеспечивает
+                      достаточный уровень безопасности здоровья населения от
+                      вредного воздействия (химического, биологического,
+                      физического) объектов на ее границе и за ней.
+                    </p>
+                    <p>
+                      Базовая санитарно-защитная зона (базовая СЗЗ) – размер
+                      СЗЗ, устанавливаемый Санитарными нормами и правилами
+                      &laquo;Требования к организации санитарно-защитных зон
+                      предприятий, сооружений и иных объектов, являющихся
+                      объектами воздействия на здоровье человека и окружающую
+                      среду&raquo;, утвержденными Постановлением Министерства
+                      здравоохранения Республики Беларусь №35 от 15.05.2014г.
+                      №35 в зависимости от вида деятельности предприятия,
+                      мощности производства.
+                    </p>
+                    <p>
+                      Установление размеров расчетной СЗЗ проводится на
+                      основании проекта СЗЗ с расчетами рассеивания выбросов
+                      загрязняющих веществ в атмосферном воздухе, уровней
+                      физического воздействия, с оценкой риска здоровью
+                      населения воздействия объекта.
+                    </p>
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
                 </li>
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Проведение расчетов
                     шума (акустический расчет)
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
-                </li>
-                <li className="flex flex-col gap-4">
-                  <div className="flex items-center gap-8">
-                    <FaCheckCircle className="inline" /> Разработка мероприятий
-                    в период неблагоприятных метеорологических условий
-                  </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
+                  <p className="text-sm">
+                    <p>
+                      Расчет уровня шума (акустический расчет) выполняется в
+                      проектной документации строительства жилых,
+                      производственных и общественных зданий. Акустический
+                      расчет проводится с целью обеспечить нормативные параметры
+                      уровня шума на территории жилой застройки.
+                    </p>
+                    <p>
+                      При проведении акустического расчета выявляются источники
+                      шума, определяются их шумовые характеристики, определяется
+                      степень влияния источников шума на объекты жилой
+                      застройки, в случае несоблюдения санитарных норм,
+                      разрабатываются шумозащитные мероприятия.
+                    </p>
+                    <p>
+                      Выступать источниками шума на предприятии могут
+                      технологическое оборудование, транспортные средства,
+                      механизмы и другое оборудование.
+                    </p>
                   </p>
                 </li>
               </ul>
-              <div className="flex-1 hidden lg:block">
-                <Image src={zone} alt="zone" />
-              </div>
             </article>
           </AccordionPanel>
         </AccordionItem>
@@ -297,27 +412,33 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex">
+            <article className="flex bg-[url('../public/scrap.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка инструкций
                     по обращению с отходами
                   </div>
-                  <p className="bg-red-100 text-sm">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aperiam harum consectetur necessitatibus blanditiis fuga ab
-                    dolorem vel quae distinctio animi iure voluptas ipsa nihil
-                    ullam sint officia dolores, accusamus ducimus modi eum omnis
-                    laudantium quos eaque est. Modi maxime tenetur fuga facere,
-                    repellendus maiores corporis, magni eveniet illum rem
-                    corrupti?
-                  </p>
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      Инструкция по обращению с отходами производства –
+                      локальный нормативный правовой акт, определяющий порядок
+                      организации и осуществления деятельности, связанной с
+                      образованием, включая нормирование образования отходов,
+                      сбором, учетом, перевозкой, хранением, передачей на
+                      использование, обезвреживание, захоронение отходов,
+                      образующихся в процессе деятельности организации.
+                    </p>
+
+                    <p>
+                      Инструкция по обращению с отходами разрабатывается и
+                      утверждается юридическими лицами, осуществляющими
+                      обращение с отходами производства, за исключением
+                      индивидуальных предпринимателей и микроорганизаций.
+                    </p>
+                  </div>
                 </li>
               </ul>
-              <div className="flex-1 hidden lg:block">
-                <Image src={scrap} alt="scrap" />
-              </div>
             </article>
           </AccordionPanel>
         </AccordionItem>

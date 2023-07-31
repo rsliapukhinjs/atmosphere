@@ -1,39 +1,29 @@
 const Cta = () => {
   return (
-    <section className="w-full flex justify-center p-8 text-emerald-50 bg-emerald-100">
-      <form className="w-full lg:w-2/3 p-8 flex flex-col items-start gap-2 rounded-lg text-lg bg-emerald-800">
-        <h2 className="text-3xl font-bold">Свяжитесь с нами сейчас!</h2>
+    <section className="w-full flex justify-center p-16 text-sky-50 bg-sky-100">
+      <form className="w-full lg:w-2/3 p-8 flex flex-col items-start gap-2 rounded-lg text-md lg:text-lg bg-sky-800">
+        <h2 className="text-xl lg:text-3xl font-bold">
+          Свяжитесь с нами сейчас!
+        </h2>
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="name">Ваше имя:</label>
-          <input
-            type="text"
-            id="name"
-            className="opacity-70 text-emerald-800"
-          />
+          <input type="text" id="name" className="opacity-70 text-sky-800" />
         </div>
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="organiation">Организация:</label>
           <input
             type="text"
             id="organiation"
-            className="opacity-70 text-emerald-800"
+            className="opacity-70 text-sky-800"
           />
         </div>
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="phone">Телефон:</label>
-          <input
-            type="text"
-            id="phone"
-            className="opacity-70 text-emerald-800"
-          />
+          <input type="text" id="phone" className="opacity-70 text-sky-800" />
         </div>
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="email">Email:</label>
-          <input
-            type="text"
-            id="email"
-            className="opacity-70 text-emerald-800"
-          />
+          <input type="text" id="email" className="opacity-70 text-sky-800" />
         </div>
         <div className="flex flex-col gap-2 w-full">
           <label htmlFor="message">Cообщение:</label>
@@ -41,7 +31,7 @@ const Cta = () => {
             name="message"
             id="message"
             rows={3}
-            className="opacity-70 text-emerald-800"
+            className="opacity-70 text-sky-800"
           ></textarea>
         </div>
         <button

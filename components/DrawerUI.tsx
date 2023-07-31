@@ -2,6 +2,7 @@
 
 import { useDisclosure } from "@chakra-ui/react";
 import { FaBars } from "react-icons/fa";
+import Link from "next/link";
 
 import {
   Drawer,
@@ -11,7 +12,6 @@ import {
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
-  Button,
 } from "@chakra-ui/react";
 
 const DrawerUI = () => {
@@ -26,13 +26,40 @@ const DrawerUI = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>Create your account</DrawerHeader>
+          <DrawerHeader>Что вас интересует?</DrawerHeader>
 
           <DrawerBody>
-            <ul>
-              <li>Test</li>
-              <li>Test</li>
-              <li>Test</li>
+            <ul className="flex flex-col gap-8">
+              <li className="flex flex-col gap-4">
+                <h2 className="uppercase text-xl border-b-2">Услуги</h2>
+                <Link href="/services">
+                  <h3>Перечень услуг</h3>
+                </Link>
+                <Link href="/lab">
+                  <h3>Лаборатория</h3>
+                </Link>
+              </li>
+              <li className="flex flex-col gap-4">
+                <h2 className="uppercase text-xl border-b-2">Инфо</h2>
+                <Link href="/docs">
+                  <h3>Документы</h3>
+                </Link>
+                <Link href="/history">
+                  <h3>История</h3>
+                </Link>
+                <Link href="/clients">
+                  <h3>Клиенты</h3>
+                </Link>
+              </li>
+              <li className="flex flex-col gap-4">
+                <h2 className="uppercase text-xl border-b-2">Контакты</h2>
+                <Link href="/team">
+                  <h3>Команда</h3>
+                </Link>
+                <Link href="/address">
+                  <h3>Адрес</h3>
+                </Link>
+              </li>
             </ul>
           </DrawerBody>
 
