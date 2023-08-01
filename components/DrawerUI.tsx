@@ -19,7 +19,7 @@ const DrawerUI = () => {
   return (
     <aside>
       <FaBars
-        className="text-2xl text-sly-800 cursor-pointer"
+        className="text-2xl text-sky-800 cursor-pointer"
         onClick={onOpen}
       />
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
@@ -29,32 +29,20 @@ const DrawerUI = () => {
           <DrawerHeader>Что вас интересует?</DrawerHeader>
 
           <DrawerBody>
-            <ul className="flex flex-col gap-8">
-              <li className="flex flex-col gap-4">
-                <h2 className="uppercase text-xl border-b-2">Услуги</h2>
+            <ul className="flex flex-col gap-4">
+              <li>
                 <Link href="/services">
                   <h3>Перечень услуг</h3>
                 </Link>
-                <Link href="/lab">
-                  <h3>Лаборатория</h3>
+              </li>
+              <li>
+                <Link href="/info">
+                  <h3>Информация</h3>
                 </Link>
               </li>
-              <li className="flex flex-col gap-4">
-                <h2 className="uppercase text-xl border-b-2">Инфо</h2>
-                <Link href="/docs">
-                  <h3>Документы</h3>
-                </Link>
-                <Link href="/history">
-                  <h3>История</h3>
-                </Link>
-              </li>
-              <li className="flex flex-col gap-4">
-                <h2 className="uppercase text-xl border-b-2">Контакты</h2>
-                <Link href="/team">
-                  <h3>Команда</h3>
-                </Link>
-                <Link href="/address">
-                  <h3>Адрес</h3>
+              <li>
+                <Link href="/contacts">
+                  <h3>Контакты</h3>
                 </Link>
               </li>
             </ul>
