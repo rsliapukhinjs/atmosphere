@@ -33,7 +33,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex bg-[url('../public/services/docs.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center p-8 gap-8">
-                <li className="flex flex-col gap-4 bg-white bg-opacity-80 p-8">
+                <li className="flex flex-col gap-4 bg-white bg-opacity-85 p-8">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Инвентаризация выбросов
                     загрязняющих веществ
@@ -77,7 +77,7 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     нормативов допустимых выбросов
@@ -135,7 +135,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex flex-row-reverse bg-[url('../public/services/vent.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Паспортизация и
                     аэродинамические испытания вентистем
@@ -182,7 +182,7 @@ const ServicesList = () => {
                     </ul>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка паспортов и
                     проверка эффективности ГОУ
@@ -254,7 +254,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex bg-[url('../public/services/project.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка разделов
                     &laquo;Охрана окружающей среды&raquo; в составе проектной
@@ -282,7 +282,7 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Составление
                     экологических паспортов предприятий
@@ -330,7 +330,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex flex-row-reverse bg-[url('../public/services/zone.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     санитарно-защитных зон предприятий
@@ -363,7 +363,7 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Проведение расчетов
                     шума (акустический расчет)
@@ -414,7 +414,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex bg-[url('../public/services/scrap.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка инструкций
                     по обращению с отходами
@@ -435,6 +435,61 @@ const ServicesList = () => {
                       утверждается юридическими лицами, осуществляющими
                       обращение с отходами производства, за исключением
                       индивидуальных предпринимателей и микроорганизаций.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2 className="py-4">
+            <AccordionButton
+              _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
+            >
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-lg lg:text-3xl"
+              >
+                Измерения в области ООС
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <article className="flex bg-[url('../public/services/control.jpg')] bg-cover bg-center">
+              <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                  <div className="flex items-center gap-8">
+                    <FaCheckCircle className="inline" /> Контрольные замеры и
+                    мониторинг
+                  </div>
+                  <div className="text-sm flex flex-col gap-2">
+                    <p>
+                      При отборе проб и проведении измерений в области охраны
+                      окружающей среды, проведении локального мониторинга
+                      окружающей среды измерение концентраций загрязняющих
+                      веществ и показателей, которые могут образовываться и
+                      (или) находиться в районе осуществления хозяйственной и
+                      иной деятельности, оказывающей вредное воздействие на
+                      окружающую среду, проводится инструментальными методами по
+                      соответствующим аттестованным методикам (методам)
+                      измерений.
+                    </p>
+                    <p>
+                      Отбор проб и измерения в области охраны окружающей среды
+                      при осуществлении производственных наблюдений выбросов
+                      загрязняющих веществ в атмосферный воздух от стационарных
+                      источников выбросов проводятся с установленной
+                      периодичностью, для объектов воздействия на атмосферный
+                      воздух, включенных в систему локального мониторинга
+                      окружающей среды и производственных наблюдений в области
+                      охраны окружающей среды, рационального использования
+                      природных ресурсов, объектами наблюдения которых являются
+                      выбросы загрязняющих веществ в атмосферный воздух от
+                      стационарных источников выбросов.
                     </p>
                   </div>
                 </li>
