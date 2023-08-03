@@ -27,7 +27,7 @@ const Cta = () => {
             Связаться
           </button>
         </form>
-        <div className="flex lg:flex-col justify-around lg:justify-center gap-8 text-2xl p-8 px-12 text-emerald-800 rounded-lg bg-emerald-50">
+        <div className="flex lg:flex-col justify-around lg:justify-center gap-8 text-2xl p-8 px-12 text-emerald-800 rounded-lg bg-emerald-100">
           <div className="flex items-center gap-4 cursor-pointer">
             <FaPhoneSquare className="inline" size="50" />
             <span className="hidden lg:inline">

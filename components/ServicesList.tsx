@@ -12,7 +12,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const ServicesList = () => {
   return (
-    <div className="w-3/4 bg-emerald-50 lg:p-8">
+    <section className="w-3/4 bg-emerald-100 lg:p-16">
       <Accordion allowMultiple>
         <AccordionItem>
           <h2 className="py-4">
@@ -33,7 +33,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex bg-[url('../public/services/docs.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center p-8 gap-8">
-                <li className="flex flex-col gap-4 bg-white bg-opacity-85 p-8">
+                <li className="flex flex-col gap-4 bg-white bg-opacity-80 p-8">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Инвентаризация выбросов
                     загрязняющих веществ
@@ -77,7 +77,7 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     нормативов допустимых выбросов
@@ -135,7 +135,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex flex-row-reverse bg-[url('../public/services/vent.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Паспортизация и
                     аэродинамические испытания вентистем
@@ -182,7 +182,7 @@ const ServicesList = () => {
                     </ul>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка паспортов и
                     проверка эффективности ГОУ
@@ -254,7 +254,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex bg-[url('../public/services/project.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка разделов
                     &laquo;Охрана окружающей среды&raquo; в составе проектной
@@ -282,7 +282,7 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Составление
                     экологических паспортов предприятий
@@ -330,7 +330,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex flex-row-reverse bg-[url('../public/services/zone.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     санитарно-защитных зон предприятий
@@ -363,7 +363,7 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Проведение расчетов
                     шума (акустический расчет)
@@ -414,7 +414,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex bg-[url('../public/services/scrap.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Разработка инструкций
                     по обращению с отходами
@@ -461,7 +461,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="flex bg-[url('../public/services/control.jpg')] bg-cover bg-center">
               <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-85">
+                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
                   <div className="flex items-center gap-8">
                     <FaCheckCircle className="inline" /> Контрольные замеры и
                     мониторинг
@@ -498,7 +498,7 @@ const ServicesList = () => {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-    </div>
+    </section>
   );
 };
 

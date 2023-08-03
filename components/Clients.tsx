@@ -13,7 +13,7 @@ const Clients = () => {
   return (
     <section className="hidden md:flex flex-col items-center gap-8 p-8 text-sky-800 bg-sky-50">
       <h2 className="text-2xl">Наши клиенты:</h2>
-      <article className="w-2/3 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <article className="w-4/5 grid grid-cols-2 lg:grid-cols-4 gap-8">
         <div className="flex items-center justify-center p-4">
           <Image
             src={selmash}
