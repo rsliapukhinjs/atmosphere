@@ -7,7 +7,7 @@ const Info = () => {
         <Carousel />
       </article>
       <h2 className="text-2xl">История предприятия:</h2>
-      <article className="w-full lg:w-2/3 bg-emerald-50 p-8 rounded-lg text-xl">
+      <article className="w-full lg:w-2/3 bg-emerald-50 p-8 rounded-lg text-lg lg:text-xl">
         <ul className="flex flex-col gap-8">
           <li className="flex flex-col gap-2">
             <span className="font-bold">02.10.1989 года</span>

@@ -6,7 +6,7 @@ import ButtonU from "@/utils/ButtonU";
 const Service = () => {
   return (
     <section className="min-h-screen flex flex-col items-center p-16 gap-8 text-sky-800">
-      <h2 className="text-2xl md:text-5xl uppercase">Наши услуги</h2>
+      <h2 className="text-2xl md:text-5xl">Перечень услуг</h2>
       <ServicesList />
       <Link href="/team">
         <ButtonU text="Заказать" />
