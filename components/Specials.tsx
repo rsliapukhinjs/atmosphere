@@ -14,7 +14,7 @@ const Specials = () => {
   return (
     <>
       <section className="p-8 text-sky-800">
-        <Tabs align="center">
+        <Tabs id="1" align="center">
           <TabList>
             <Tab className="lg:text-xl">Деятельность</Tab>
             <Tab className="lg:text-xl">Лаборатория</Tab>

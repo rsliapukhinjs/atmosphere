@@ -12,7 +12,7 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const ServicesList = () => {
   return (
-    <section className="w-full lg:w-3/4 bg-emerald-100 lg:p-16">
+    <section className="w-full lg:w-3/4 lg:p-16 bg-white border-2">
       <Accordion allowMultiple>
         <AccordionItem>
           <h2 className="py-4">

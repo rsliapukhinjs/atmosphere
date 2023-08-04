@@ -23,7 +23,6 @@ const settings = {
 import atmo1 from "../public/history/atmo-1.jpg";
 import atmo2 from "../public/history/atmo-2.jpg";
 import atmo3 from "../public/history/atmo-3.jpg";
-import atmo4 from "../public/history/atmo-4.jpg";
 import Image from "next/image";
 
 export default function Carousel() {
@@ -37,7 +36,7 @@ export default function Carousel() {
   const side = useBreakpointValue({ base: "30%", md: "10px" });
 
   // These are the images used in the slide
-  const cards = [atmo1, atmo2, atmo3, atmo4];
+  const cards = [atmo1, atmo2, atmo3];
 
   return (
     <Box
