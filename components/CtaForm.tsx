@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { useToast } from "@chakra-ui/react";
 
 const CtaForm = () => {
   async function handleSubmit(event: React.SyntheticEvent) {
@@ -22,10 +23,19 @@ const CtaForm = () => {
       body: json,
     });
     const result = await response.json();
+
     if (result.success) {
-      console.log(result);
+      toast({
+        title: "Данные отправлены!",
+        description: "Мы свяжемся с вами в ближайшее время",
+        status: "success",
+        duration: 3000,
+        isClosable: true,
+      });
     }
   }
+
+  const toast = useToast();
 
   return (
     <form
