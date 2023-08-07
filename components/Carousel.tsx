@@ -20,10 +20,10 @@ const settings = {
   slidesToScroll: 1,
 };
 
+import Image from "next/image";
 import atmo1 from "../public/history/atmo-1.jpg";
 import atmo2 from "../public/history/atmo-2.jpg";
 import atmo3 from "../public/history/atmo-3.jpg";
-import Image from "next/image";
 
 export default function Carousel() {
   // As we have used custom buttons, we need a reference variable to
@@ -41,7 +41,7 @@ export default function Carousel() {
   return (
     <Box
       position={"relative"}
-      height={"600px"}
+      height={"500px"}
       width={"full"}
       overflow={"hidden"}
     >
@@ -86,11 +86,33 @@ export default function Carousel() {
       </IconButton>
       {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
-        {cards.map((url, index) => (
-          <Box key={index}>
-            <Image src={url} alt="carousel photo" />
-          </Box>
-        ))}
+        <Box>
+          <Image
+            src={atmo1}
+            alt="carousel image"
+            width={1000}
+            height={300}
+            className="w-full"
+          />
+        </Box>
+        <Box>
+          <Image
+            src={atmo2}
+            alt="carousel image"
+            width={1000}
+            height={300}
+            className="w-full"
+          />
+        </Box>
+        <Box>
+          <Image
+            src={atmo3}
+            alt="carousel image"
+            width={1000}
+            height={300}
+            className="w-full"
+          />
+        </Box>
       </Slider>
     </Box>
   );

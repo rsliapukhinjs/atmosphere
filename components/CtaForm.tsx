@@ -6,7 +6,7 @@ const CtaForm = () => {
   async function handleSubmit(event: React.SyntheticEvent) {
     event.preventDefault();
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.target as HTMLFormElement);
 
     formData.append("access_key", "d44f4053-26a5-40bd-afe9-7c81f9a10243");
 

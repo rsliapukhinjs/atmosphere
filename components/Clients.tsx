@@ -39,6 +39,13 @@ const Clients = () => {
         </div>
         <div className="flex items-center justify-center p-4">
           <Image
+            src={gaz}
+            alt="gaz"
+            className="grayscale hover:filter-none w-full"
+          />
+        </div>
+        <div className="flex items-center justify-center p-4">
+          <Image
             src={alkopack}
             alt="alkopack"
             className="grayscale hover:filter-none w-full"
@@ -59,13 +66,7 @@ const Clients = () => {
             className="grayscale hover:filter-none w-full"
           />
         </div>
-        <div className="flex items-center justify-center p-4">
-          <Image
-            src={gaz}
-            alt="gaz"
-            className="grayscale hover:filter-none w-full"
-          />
-        </div>
+
         <div className="flex items-center justify-center p-4">
           <Image
             src={osobino}
