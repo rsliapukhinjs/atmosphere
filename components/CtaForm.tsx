@@ -39,7 +39,7 @@ const CtaForm = () => {
 
   return (
     <form
-      className="p-8 flex flex-col items-start gap-4 rounded-lg text-sm lg:text-md border-2 text-sky-50 bg-sky-800"
+      className="p-8 flex flex-col items-start gap-4 rounded-lg text-sm lg:text-md border-2 text-sky-50 bg-sky-800 w-full xl:w-2/3"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col gap-2 w-full">
@@ -82,7 +82,7 @@ const CtaForm = () => {
       </div>
       <button
         type="submit"
-        className="inline-block px-4 py-2 mt-2 scroll-py-28 bg-sky-600 hover:bg-sky-800 text-white rounded-lg self-center"
+        className="inline-block px-4 py-2 mt-2  bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg self-center"
       >
         Связаться
       </button>

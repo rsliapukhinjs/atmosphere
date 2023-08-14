@@ -12,10 +12,10 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const ServicesList = () => {
   return (
-    <section className="w-full lg:w-3/4 lg:p-16 bg-white border-2">
+    <section className="w-full lg:p-8 bg-slate-50 border-2">
       <Accordion allowMultiple>
         <AccordionItem>
-          <h2 className="py-4">
+          <h2 className="py-4 px-4 lg:px-16">
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -23,7 +23,7 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-lg lg:text-3xl"
+                className="text-md lg:text-2xl"
               >
                 Инвентаризация и нормативы ПДВ
               </Box>
@@ -31,14 +31,14 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex bg-[url('../public/services/docs.jpg')] bg-cover bg-center">
-              <ul className="flex-1 text-xl flex flex-col justify-center p-8 gap-8">
-                <li className="flex flex-col gap-4 bg-white bg-opacity-80 p-8">
-                  <div className="flex items-center gap-8">
+            <article className="bg-[url('../public/services/docs.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center p-4 gap-8">
+                <li className="flex flex-col gap-4 bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Инвентаризация выбросов
                     загрязняющих веществ
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Инвентаризация выбросов загрязняющих веществ в атмосферный
                       воздух – комплекс мероприятий, выполняемых
@@ -77,12 +77,12 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     нормативов допустимых выбросов
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Нормативы допустимых выбросов загрязняющих веществ в
                       атмосферный воздух - максимальные величины поступления
@@ -117,7 +117,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4">
+          <h2 className="py-4 px-4 lg:px-16">
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -125,7 +125,7 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-lg lg:text-3xl"
+                className="text-md lg:text-2xl"
               >
                 Вентсистемы и ГОУ
               </Box>
@@ -133,14 +133,14 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex flex-row-reverse bg-[url('../public/services/vent.jpg')] bg-cover bg-center">
-              <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+            <article className="bg-[url('../public/services/vent.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Паспортизация и
                     аэродинамические испытания вентистем
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Вентиляционная система - комплекс вентиляционных установок
                       и устройств естественной вентиляции, обслуживающих
@@ -182,12 +182,12 @@ const ServicesList = () => {
                     </ul>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+                <li className="flex flex-col gap-4 p-4 bg-red-50 bg-opacity-80">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Разработка паспортов и
                     проверка эффективности ГОУ
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Газоочистная установка (ГОУ) - сооружение и (или)
                       оборудование, предназначенные для очистки газов, отходящих
@@ -236,7 +236,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4">
+          <h2 className="py-4 px-4 lg:px-16">
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -244,7 +244,7 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-lg lg:text-3xl"
+                className="text-md lg:text-2xl"
               >
                 Проектная документация
               </Box>
@@ -252,15 +252,15 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex bg-[url('../public/services/project.jpg')] bg-cover bg-center">
-              <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+            <article className="bg-[url('../public/services/project.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Разработка разделов
                     &laquo;Охрана окружающей среды&raquo; в составе проектной
                     документации
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Разработка раздела «Охрана окружающей среды» в составе
                       предпроектной и проектной документации – оценка
@@ -282,8 +282,8 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Составление
                     экологических паспортов предприятий
                   </div>
@@ -312,7 +312,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4">
+          <h2 className="py-4 px-4 lg:px-16">
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -320,7 +320,7 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-lg lg:text-3xl"
+                className="text-md lg:text-2xl"
               >
                 Расчет СЗЗ, расчет шума, НМУ
               </Box>
@@ -328,14 +328,14 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex flex-row-reverse bg-[url('../public/services/zone.jpg')] bg-cover bg-center">
-              <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+            <article className="bg-[url('../public/services/zone.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Разработка проектов
                     санитарно-защитных зон предприятий
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Санитарно-защитная зона (СЗЗ) - территория с особым
                       режимом использования, размер которой обеспечивает
@@ -363,12 +363,12 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Проведение расчетов
                     шума (акустический расчет)
                   </div>
-                  <p className="text-sm flex flex-col gap-2">
+                  <p className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Расчет уровня шума (акустический расчет) выполняется в
                       проектной документации строительства жилых,
@@ -396,7 +396,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4">
+          <h2 className="py-4 px-4 lg:px-16">
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -404,7 +404,7 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-lg lg:text-3xl"
+                className="text-md lg:text-2xl"
               >
                 Обращение с отходами
               </Box>
@@ -412,14 +412,14 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex bg-[url('../public/services/scrap.jpg')] bg-cover bg-center">
-              <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+            <article className="bg-[url('../public/services/scrap.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Разработка инструкций
                     по обращению с отходами
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Инструкция по обращению с отходами производства –
                       локальный нормативный правовой акт, определяющий порядок
@@ -443,7 +443,7 @@ const ServicesList = () => {
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
-          <h2 className="py-4">
+          <h2 className="py-4 px-4 lg:px-16">
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -451,7 +451,7 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-lg lg:text-3xl"
+                className="text-md lg:text-2xl"
               >
                 Измерения в области ООС
               </Box>
@@ -459,14 +459,14 @@ const ServicesList = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <article className="flex bg-[url('../public/services/control.jpg')] bg-cover bg-center">
-              <ul className="flex-1 text-xl flex flex-col justify-center gap-8 p-8">
-                <li className="flex flex-col gap-4 p-8 bg-white bg-opacity-80">
-                  <div className="flex items-center gap-8">
+            <article className="bg-[url('../public/services/control.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
+                  <div className="flex items-center gap-8 text-lg lg:text-xl">
                     <FaCheckCircle className="inline" /> Контрольные замеры и
                     мониторинг
                   </div>
-                  <div className="text-sm flex flex-col gap-2">
+                  <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       При отборе проб и проведении измерений в области охраны
                       окружающей среды, проведении локального мониторинга

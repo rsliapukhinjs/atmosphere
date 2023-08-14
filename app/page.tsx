@@ -5,7 +5,7 @@ import Hero from "@/components/Hero";
 
 const Home = () => {
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center bg-gradient-to-b from-white to-emerald-100">
       <Hero />
       <Specials />
       <Clients />

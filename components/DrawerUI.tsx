@@ -32,17 +32,23 @@ const DrawerUI = () => {
             <ul className="flex flex-col gap-4">
               <li>
                 <Link href="/services">
-                  <h3>Перечень услуг</h3>
+                  <h3 className="border-b-2 border-white hover:border-emerald-600">
+                    Перечень услуг
+                  </h3>
                 </Link>
               </li>
               <li>
                 <Link href="/info">
-                  <h3>Информация</h3>
+                  <h3 className="border-b-2 border-white hover:border-emerald-600">
+                    Информация
+                  </h3>
                 </Link>
               </li>
               <li>
                 <Link href="/contacts">
-                  <h3>Контакты</h3>
+                  <h3 className="border-b-2 border-white hover:border-emerald-600">
+                    Контакты
+                  </h3>
                 </Link>
               </li>
             </ul>
