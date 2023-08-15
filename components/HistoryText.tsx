@@ -49,7 +49,7 @@ const HistoryText = () => {
   });
 
   return (
-    <article className="w-full lg:w-2/3 p-8 rounded-lg text-md  bg-white border-2">
+    <article className="w-full lg:w-4/5 p-8 lg:px-16 rounded-lg text-md  bg-white border-2">
       <Stepper index={-1} orientation="vertical" height="auto" gap="8">
         {steps.map((step, index) => (
           <Step key={index}>

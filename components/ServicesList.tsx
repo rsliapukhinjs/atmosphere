@@ -8,14 +8,13 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
-import { FaCheckCircle } from "react-icons/fa";
 
 const ServicesList = () => {
   return (
-    <section className="w-full lg:p-8 bg-slate-50 border-2">
-      <Accordion allowMultiple>
+    <section className="w-full bg-slate-50 border-2 p-4">
+      <Accordion allowToggle className="grid grid-cols-3 gap-4">
         <AccordionItem>
-          <h2 className="py-4 px-4 lg:px-16">
+          <h2>
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -23,9 +22,9 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-md lg:text-2xl"
+                className="text-xs lg:text-lg"
               >
-                Инвентаризация и нормативы ПДВ
+                Инвентаризация выбросов загрязняющих веществ
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -34,10 +33,6 @@ const ServicesList = () => {
             <article className="bg-[url('../public/services/docs.jpg')] bg-cover bg-center">
               <ul className="text-xl flex flex-col items-center p-4 gap-8">
                 <li className="flex flex-col gap-4 bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Инвентаризация выбросов
-                    загрязняющих веществ
-                  </div>
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Инвентаризация выбросов загрязняющих веществ в атмосферный
@@ -77,11 +72,30 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
+              </ul>
+            </article>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton
+              _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
+            >
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-xs lg:text-lg"
+              >
+                Разработка проектов нормативов допустимых выбросов
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <article className="bg-[url('../public/services/docs.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center p-4 gap-8">
                 <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Разработка проектов
-                    нормативов допустимых выбросов
-                  </div>
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Нормативы допустимых выбросов загрязняющих веществ в
@@ -117,7 +131,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4 px-4 lg:px-16">
+          <h2>
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -125,9 +139,9 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-md lg:text-2xl"
+                className="text-xs lg:text-lg"
               >
-                Вентсистемы и ГОУ
+                Паспортизация и аэродинамические испытания вентистем
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -135,11 +149,7 @@ const ServicesList = () => {
           <AccordionPanel pb={4}>
             <article className="bg-[url('../public/services/vent.jpg')] bg-cover bg-center">
               <ul className="text-xl flex flex-col items-center gap-8 p-4">
-                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Паспортизация и
-                    аэродинамические испытания вентистем
-                  </div>
+                <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-8">
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Вентиляционная система - комплекс вентиляционных установок
@@ -182,11 +192,30 @@ const ServicesList = () => {
                     </ul>
                   </div>
                 </li>
+              </ul>
+            </article>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton
+              _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
+            >
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-xs lg:text-lg"
+              >
+                Разработка паспортов и проверка эффективности ГОУ
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <article className="bg-[url('../public/services/vent.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
                 <li className="flex flex-col gap-4 p-4 bg-red-50 bg-opacity-80">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Разработка паспортов и
-                    проверка эффективности ГОУ
-                  </div>
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Газоочистная установка (ГОУ) - сооружение и (или)
@@ -236,7 +265,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4 px-4 lg:px-16">
+          <h2>
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -244,9 +273,9 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-md lg:text-2xl"
+                className="text-xs lg:text-lg"
               >
-                Проектная документация
+                Разработка разделов ООС в составе проектной документации
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -255,11 +284,6 @@ const ServicesList = () => {
             <article className="bg-[url('../public/services/project.jpg')] bg-cover bg-center">
               <ul className="text-xl flex flex-col items-center gap-8 p-4">
                 <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Разработка разделов
-                    &laquo;Охрана окружающей среды&raquo; в составе проектной
-                    документации
-                  </div>
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Разработка раздела «Охрана окружающей среды» в составе
@@ -282,11 +306,30 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
+              </ul>
+            </article>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton
+              _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
+            >
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-xs lg:text-lg"
+              >
+                Составление экологических паспортов предприятий
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <article className="bg-[url('../public/services/project.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
                 <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Составление
-                    экологических паспортов предприятий
-                  </div>
                   <p className="text-sm">
                     <p>
                       Экологический паспорт предприятия - документ, содержащий
@@ -312,7 +355,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4 px-4 lg:px-16">
+          <h2>
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -320,9 +363,9 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-md lg:text-2xl"
+                className="text-xs lg:text-lg"
               >
-                Расчет СЗЗ, расчет шума, НМУ
+                Разработка проектов санитарно-защитных зон предприятий
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -331,10 +374,6 @@ const ServicesList = () => {
             <article className="bg-[url('../public/services/zone.jpg')] bg-cover bg-center">
               <ul className="text-xl flex flex-col items-center gap-8 p-4">
                 <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Разработка проектов
-                    санитарно-защитных зон предприятий
-                  </div>
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Санитарно-защитная зона (СЗЗ) - территория с особым
@@ -342,17 +381,6 @@ const ServicesList = () => {
                       достаточный уровень безопасности здоровья населения от
                       вредного воздействия (химического, биологического,
                       физического) объектов на ее границе и за ней.
-                    </p>
-                    <p>
-                      Базовая санитарно-защитная зона (базовая СЗЗ) – размер
-                      СЗЗ, устанавливаемый Санитарными нормами и правилами
-                      &laquo;Требования к организации санитарно-защитных зон
-                      предприятий, сооружений и иных объектов, являющихся
-                      объектами воздействия на здоровье человека и окружающую
-                      среду&raquo;, утвержденными Постановлением Министерства
-                      здравоохранения Республики Беларусь №35 от 15.05.2014г.
-                      №35 в зависимости от вида деятельности предприятия,
-                      мощности производства.
                     </p>
                     <p>
                       Установление размеров расчетной СЗЗ проводится на
@@ -363,11 +391,30 @@ const ServicesList = () => {
                     </p>
                   </div>
                 </li>
+              </ul>
+            </article>
+          </AccordionPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <h2>
+            <AccordionButton
+              _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
+            >
+              <Box
+                as="span"
+                flex="1"
+                textAlign="left"
+                className="text-xs lg:text-lg"
+              >
+                Проведение расчетов шума (акустический расчет)
+              </Box>
+              <AccordionIcon />
+            </AccordionButton>
+          </h2>
+          <AccordionPanel pb={4}>
+            <article className="bg-[url('../public/services/zone.jpg')] bg-cover bg-center">
+              <ul className="text-xl flex flex-col items-center gap-8 p-4">
                 <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Проведение расчетов
-                    шума (акустический расчет)
-                  </div>
                   <p className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Расчет уровня шума (акустический расчет) выполняется в
@@ -396,7 +443,7 @@ const ServicesList = () => {
         </AccordionItem>
 
         <AccordionItem>
-          <h2 className="py-4 px-4 lg:px-16">
+          <h2>
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -404,9 +451,9 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-md lg:text-2xl"
+                className="text-xs lg:text-lg"
               >
-                Обращение с отходами
+                Разработка инструкций по обращению с отходами
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -415,10 +462,6 @@ const ServicesList = () => {
             <article className="bg-[url('../public/services/scrap.jpg')] bg-cover bg-center">
               <ul className="text-xl flex flex-col items-center gap-8 p-4">
                 <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Разработка инструкций
-                    по обращению с отходами
-                  </div>
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       Инструкция по обращению с отходами производства –
@@ -443,7 +486,7 @@ const ServicesList = () => {
           </AccordionPanel>
         </AccordionItem>
         <AccordionItem>
-          <h2 className="py-4 px-4 lg:px-16">
+          <h2>
             <AccordionButton
               _expanded={{ bg: "rgb(2, 132, 199)", color: "white" }}
             >
@@ -451,9 +494,9 @@ const ServicesList = () => {
                 as="span"
                 flex="1"
                 textAlign="left"
-                className="text-md lg:text-2xl"
+                className="text-xs lg:text-lg"
               >
-                Измерения в области ООС
+                Контрольные замеры и локальный мониторинг
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -462,10 +505,6 @@ const ServicesList = () => {
             <article className="bg-[url('../public/services/control.jpg')] bg-cover bg-center">
               <ul className="text-xl flex flex-col items-center gap-8 p-4">
                 <li className="flex flex-col gap-4  bg-red-50 bg-opacity-80 p-4">
-                  <div className="flex items-center gap-8 text-lg lg:text-xl">
-                    <FaCheckCircle className="inline" /> Контрольные замеры и
-                    мониторинг
-                  </div>
                   <div className="text-xs lg:text-sm flex flex-col gap-2">
                     <p>
                       При отборе проб и проведении измерений в области охраны

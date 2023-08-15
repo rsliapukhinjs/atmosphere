@@ -46,7 +46,7 @@ const ServicesForm = () => {
         <select
           name="service"
           id="service"
-          className="opacity-70 text-sky-800 text-xs lg:text-md"
+          className="opacity-70 text-sky-800 text-xs lg:text-lg"
           placeholder="Вид работ"
           required
         >
@@ -67,7 +67,7 @@ const ServicesForm = () => {
         <input
           type="text"
           id="phone"
-          className="opacity-70 text-sky-800 text-xs lg:text-md"
+          className="opacity-70 text-sky-800 text-xs lg:text-lg"
           name="phone"
           placeholder="Телефон"
           required
@@ -75,7 +75,7 @@ const ServicesForm = () => {
       </div>
       <button
         type="submit"
-        className="inline-block px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs lg:text-md"
+        className="inline-block px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs lg:text-lg"
       >
         Заказать
       </button>
