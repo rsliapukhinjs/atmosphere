@@ -7,7 +7,7 @@ const Info = () => {
       <article className="w-full lg:w-2/3 hidden sm:flex flex-col items-center">
         <Carousel />
       </article>
-      <h2 className="text-2xl">История предприятия:</h2>
+      <h1 className="text-2xl">История предприятия:</h1>
       <HistoryText />
     </section>
   );

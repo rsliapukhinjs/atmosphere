@@ -50,9 +50,7 @@ const ServicesForm = () => {
           placeholder="Вид работ"
           required
         >
-          <option value="" disabled selected>
-            Вид услуг
-          </option>
+          <option hidden>Вид услуг</option>
           <option value="Инвентаризация и нормативы ПДВ">
             Инвентаризация и нормативы ПДВ
           </option>
