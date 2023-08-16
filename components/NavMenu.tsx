@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavMenu = () => {
   return (
     <>
-      <ul className="flex items-stretch gap-8 text-xs uppercase pt-2">
+      <ul className="flex gap-8 text-sm uppercase pt-2">
         <Link href="/services">
           <li className="border-b-2 border-white hover:border-b-2 hover:border-emerald-600">
             Услуги

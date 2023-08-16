@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="w-full p-4 lg:px-16 text-sky-800 flex items-center justify-between shadow-lg sticky top-0 bg-white z-50">
       <Link href="/">
-        <Image src={logo} alt="logo" width={125} />
+        <Image src={logo} alt="logo" width={150} />
       </Link>
       <nav className="hidden lg:flex  text-sky-800 font-normal">
         <NavMenu />

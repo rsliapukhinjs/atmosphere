@@ -2,15 +2,15 @@ import ServiceMenuBox from "@/utils/ServiceMenuBox";
 
 const boxes = [
   {
-    link: "/services/inv",
+    link: "/services/inventar",
     text: "Инвентаризация выбросов загрязняющих веществ",
   },
   {
-    link: "/services/norm",
+    link: "/services/normativy",
     text: "Разработка проектов нормативов допустимых выбросов",
   },
   {
-    link: "/services/vent",
+    link: "/services/ventilacya",
     text: "Паспортизация и аэродинамические испытания вентистем",
   },
   {
@@ -18,11 +18,11 @@ const boxes = [
     text: "Разработка паспортов и проверка эффективности ГОУ",
   },
   {
-    link: "/services/oos",
+    link: "/services/project",
     text: "Разработка разделов ООС в составе проектной документации",
   },
   {
-    link: "/services/pass",
+    link: "/services/passport",
     text: "Составление экологических паспортов предприятий",
   },
   {
@@ -30,7 +30,7 @@ const boxes = [
     text: "Разработка проектов санитарно-защитных зон предприятий",
   },
   {
-    link: "/services/oth",
+    link: "/services/othody",
     text: "Разработка инструкций по обращению с отходами",
   },
   {
@@ -41,40 +41,10 @@ const boxes = [
 
 const ServicesMenu = () => {
   return (
-    <section className="grid grid-cols-2 lg:grid-cols-3 gap-4 p-8 text-sm lg:text-lg text-center ">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm lg:text-lg text-center ">
       {boxes.map((box) => (
         <ServiceMenuBox link={box.link} text={box.text} key={box.link} />
       ))}
-      {/* <Link href="/services">
-        <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer ">
-          <h2>Инвентаризация и нормативы</h2>
-        </article>
-      </Link>
-      <Link href="/services">
-        <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer">
-          <h2>Вентиляция и ГОУ</h2>
-        </article>
-      </Link>
-      <Link href="/services">
-        <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer">
-          <h2>Проектная документация</h2>
-        </article>
-      </Link>
-      <Link href="/services">
-        <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer">
-          <h2>Расчет СЗЗ, шума, НМУ</h2>
-        </article>
-      </Link>
-      <Link href="/services">
-        <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer">
-          <h2>Обращение с отходами</h2>
-        </article>
-      </Link>
-      <Link href="/services">
-        <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer">
-          <h2>Контрольные замеры</h2>
-        </article>
-      </Link> */}
     </section>
   );
 };

@@ -7,7 +7,7 @@ export default function DashboardLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center gap-8 p-8 min-h-screen">
+    <section className="flex flex-col items-center gap-8 p-8 min-h-screen bg-gradient-to-b from-white to-sky-100">
       <ServicesMenu />
       {children}
       <ServicesForm />

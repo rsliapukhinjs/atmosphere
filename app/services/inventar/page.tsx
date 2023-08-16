@@ -1,4 +1,4 @@
-const Inventarization = () => {
+const Inventar = () => {
   return (
     <section className="test flex flex-col items-center p-8 gap-8 text-sky-800 bg-gradient-to-b from-white to-emerald-100">
       <h1 className="text-2xl">Инвентаризация выбросов загрязняющих веществ</h1>
@@ -40,4 +40,4 @@ const Inventarization = () => {
   );
 };
 
-export default Inventarization;
+export default Inventar;
