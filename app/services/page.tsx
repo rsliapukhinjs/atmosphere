@@ -1,4 +1,4 @@
-import { FaCheck, FaCheckCircle } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 
 const Services = () => {
   return (
