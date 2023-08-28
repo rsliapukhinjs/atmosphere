@@ -17,14 +17,14 @@ const boxes = [
     link: "/services/gou",
     text: "Разработка паспортов и проверка эффективности ГОУ",
   },
-  {
-    link: "/services/project",
-    text: "Разработка разделов ООС в составе проектной документации",
-  },
-  {
-    link: "/services/passport",
-    text: "Составление экологических паспортов предприятий",
-  },
+  // {
+  //   link: "/services/project",
+  //   text: "Разработка разделов ООС в составе проектной документации",
+  // },
+  // {
+  //   link: "/services/passport",
+  //   text: "Составление экологических паспортов предприятий",
+  // },
   {
     link: "/services/szz",
     text: "Разработка проектов санитарно-защитных зон предприятий",
@@ -35,13 +35,13 @@ const boxes = [
   },
   {
     link: "/services/control",
-    text: "Контрольные замеры и локальный мониторинг",
+    text: "Контрольные замеры и проведение локального мониторинга",
   },
 ];
 
 const ServicesMenu = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-sm lg:text-lg text-center ">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-sm lg:text-lg text-center ">
       {boxes.map((box) => (
         <ServiceMenuBox link={box.link} text={box.text} key={box.link} />
       ))}
