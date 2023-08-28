@@ -50,10 +50,10 @@ const NavMenu = () => {
           </MenuButton>
           <MenuList>
             <MenuItem>
-              <Link href="/docs">Документы</Link>
+              <Link href="/docs">Аттестаты и сертификаты</Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/info">История</Link>
+              <Link href="/info">История предприятия</Link>
             </MenuItem>
           </MenuList>
         </Menu>
@@ -66,7 +66,7 @@ const NavMenu = () => {
           </MenuButton>
           <MenuList>
             <MenuItem>
-              <Link href="/contacts">Контакты</Link>
+              <Link href="/contacts">Контакты и адрес</Link>
             </MenuItem>
           </MenuList>
         </Menu>

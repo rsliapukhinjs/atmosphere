@@ -38,6 +38,13 @@ const DrawerUI = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/docs">
+                  <h3 className="border-b-2 border-white hover:border-emerald-600">
+                    Документы
+                  </h3>
+                </Link>
+              </li>
+              <li>
                 <Link href="/info">
                   <h3 className="border-b-2 border-white hover:border-emerald-600">
                     Информация
