@@ -1,6 +1,6 @@
 const Project = () => {
   return (
-    <section className="test flex flex-col items-center p-8 gap-8 text-sky-800 bg-gradient-to-b from-white to-emerald-100">
+    <section className="test flex flex-col items-center p-8 gap-8 text-sky-800 bg-[url('../public/services/project.jpg')] bg-cover bg-center">
       <h1 className="text-2xl">
         Разработка разделов ООС в составе проектной документации
       </h1>

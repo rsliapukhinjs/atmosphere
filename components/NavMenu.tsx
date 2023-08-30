@@ -31,7 +31,13 @@ const NavMenu = () => {
               <Link href="/services/gou">Газоочистные установки</Link>
             </MenuItem>
             <MenuItem>
+              <Link href="/services/passport">Экологические паспорта</Link>
+            </MenuItem>
+            <MenuItem>
               <Link href="/services/szz">Разработка СЗЗ</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link href="/services/noise">Расчет шума</Link>
             </MenuItem>
             <MenuItem>
               <Link href="/services/othody">Обращение с отходами</Link>
@@ -50,10 +56,13 @@ const NavMenu = () => {
           </MenuButton>
           <MenuList>
             <MenuItem>
-              <Link href="/docs">Аттестаты и сертификаты</Link>
+              <Link href="/docs">Документация</Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/info">История предприятия</Link>
+              <Link href="/lab">Лаборатория</Link>
+            </MenuItem>
+            <MenuItem>
+              <Link href="/info">История</Link>
             </MenuItem>
           </MenuList>
         </Menu>
@@ -66,7 +75,7 @@ const NavMenu = () => {
           </MenuButton>
           <MenuList>
             <MenuItem>
-              <Link href="/contacts">Контакты и адрес</Link>
+              <Link href="/contacts">Контакты и реквизиты</Link>
             </MenuItem>
           </MenuList>
         </Menu>

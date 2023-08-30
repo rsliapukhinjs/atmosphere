@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Контрольные замеры и локальный мониторинг",
+  description:
+    "Контрольные замеры и локальный мониторинг, Гомель, Гомельская область, Республика Беларусь, контроль, замеры, локальный мониторинг, мониторинг",
+};
+
 const Control = () => {
   return (
     <section className="p-8 text-sky-800 bg-[url('../public/services/control.jpg')] bg-cover bg-center">
