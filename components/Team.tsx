@@ -1,7 +1,7 @@
 import Image from "next/image";
-import director from "../public/faces/director.jpg";
-import engineer from "../public/faces/engineer.jpg";
-import accountant from "../public/faces/accountant.jpg";
+import director from "../public/faces/director.jpeg";
+import engineer from "../public/faces/engineer.jpeg";
+import accountant from "../public/faces/accountant.jpeg";
 
 import Link from "next/link";
 
