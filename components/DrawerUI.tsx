@@ -40,14 +40,21 @@ const DrawerUI = () => {
               <li>
                 <Link href="/docs">
                   <h3 className="border-b-2 border-white hover:border-emerald-600">
-                    Документы
+                    Документация
+                  </h3>
+                </Link>
+              </li>
+              <li>
+                <Link href="/lab">
+                  <h3 className="border-b-2 border-white hover:border-emerald-600">
+                    Лаборатория
                   </h3>
                 </Link>
               </li>
               <li>
                 <Link href="/info">
                   <h3 className="border-b-2 border-white hover:border-emerald-600">
-                    Информация
+                    История
                   </h3>
                 </Link>
               </li>
