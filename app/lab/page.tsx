@@ -18,7 +18,7 @@ const Lab = () => {
         <Image src={lab} alt="Laboratory" />
       </div>
       <h1 className="text-2xl text-center">Химическая лаборатория</h1>
-      <div className="p-8 w-full lg:w-2/3 bg-white rounded-lg">
+      <div className="p-8 w-full lg:w-2/3 bg-white rounded-lg text-xs md:text-sm">
         <p>
           &#9;ОДО &laquo;Атмосфера&raquo; имеет в своем составе современную
           химическую лабораторию с широким перечнем оборудования для

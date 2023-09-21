@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const Shum = () => {
   return (
-    <section className="p-8 text-sky-800 bg-[url('../public/services/szz.jpg')] bg-cover bg-center">
+    <section className="lg:p-8 text-sky-800 bg-[url('../public/services/szz.jpg')] bg-cover bg-center">
       <article className="flex flex-col items-center p-8 gap-8 bg-sky-100 opacity-90">
         <h1 className="text-2xl">Расчет уровня шума (акустический расчет)</h1>
         <div className="text-xs md:text-sm flex flex-col gap-2">

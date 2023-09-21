@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const Inventar = () => {
   return (
-    <section className="p-8 text-sky-800 bg-[url('../public/services/inv.jpg')] bg-cover bg-center">
+    <section className="lg:p-8 text-sky-800 bg-[url('../public/services/inv.jpg')] bg-cover bg-center">
       <article className="flex flex-col items-center p-8 gap-8 bg-sky-100 opacity-90">
         <h1 className="text-2xl">
           Инвентаризация выбросов загрязняющих веществ

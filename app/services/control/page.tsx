@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const Control = () => {
   return (
-    <section className="p-8 text-sky-800 bg-[url('../public/services/control.jpg')] bg-cover bg-center">
+    <section className="lg:p-8 text-sky-800 bg-[url('../public/services/control.jpg')] bg-cover bg-center">
       <article className="flex flex-col items-center p-8 gap-8 bg-sky-100 opacity-90">
         <h1 className="text-2xl">Контрольные замеры и локальный мониторинг</h1>
         <div className="text-xs md:text-sm flex flex-col gap-2">
