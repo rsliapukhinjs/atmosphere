@@ -17,7 +17,7 @@ const Lab = () => {
       <div className="w-full xl:w-1/2">
         <Image src={lab} alt="Laboratory" />
       </div>
-      <h1 className="text-2xl">Химическая лаборатория</h1>
+      <h1 className="text-2xl text-center">Химическая лаборатория</h1>
       <div className="p-8 w-full lg:w-2/3 bg-white rounded-lg">
         <p>
           &#9;ОДО &laquo;Атмосфера&raquo; имеет в своем составе современную

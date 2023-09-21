@@ -7,24 +7,24 @@ const Contacts = () => {
       <h2 className="text-2xl">Вам помогут:</h2>
       <Team />
       <article className="w-full border-2 bg-red-100 flex flex-col items-center justify-center gap-4 p-8 text-sm lg:text-lg">
-        <h2 className="text-2xl">Банковские реквизиты:</h2>
+        <h2 className="text-2xl text-center">Банковские реквизиты:</h2>
         <p className="text-center">
           В дирекции ОАО &laquo;Белинвестбанк&raquo; по Гомельской области
         </p>
         <div className="flex flex-col gap-2 items-center">
-          <p>
+          <p className="text-center">
             код: <strong>BLBBBY2X</strong>
           </p>
-          <p>
+          <p className="text-center">
             р/с: <strong>BY25BLBB30120400053762001001</strong>
           </p>
-          <p>
+          <p className="text-center">
             УНП: <strong>400073762</strong>
           </p>
         </div>
       </article>
       <h1 className="text-2xl">Наш адрес:</h1>
-      <p className="text-lg lg:text-3xl font-bold">
+      <p className="text-lg lg:text-3xl font-bold text-center">
         г. Гомель, ул. Б. Хмельницкого, 79, 3-й этаж
       </p>
       <MapUI />

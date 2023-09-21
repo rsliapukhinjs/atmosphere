@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const Services = () => {
   return (
-    <section className="flex flex-col items-center p-8 gap-8 text-sky-800">
+    <section className="flex flex-col items-center p-2 lg:p-8 gap-2 lg:gap-8 text-sky-800">
       <h1 className="text-2xl">Мы поможем Вам:</h1>
       <ul className="w-full lg:w-2/3 flex flex-col items-start gap-4 text-sm lg:text-lg">
         <li className="w-full flex items-start gap-8">

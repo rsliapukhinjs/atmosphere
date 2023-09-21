@@ -13,7 +13,7 @@ const HeroServices = () => {
   return (
     <div className="flex flex-col items-center text-sky-800 bg-slate-50 p-8">
       <h2 className="text-2xl">Мы предлагаем услуги:</h2>
-      <section className="grid grid-cols-2 lg:grid-cols-3 gap-8 p-8 text-sm lg:text-lg text-center ">
+      <section className="grid grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-8 p-2 lg:p-8 text-sm lg:text-lg text-center ">
         <Link href="/services/inventar">
           <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer ">
             <FaBookOpen size={50} />
