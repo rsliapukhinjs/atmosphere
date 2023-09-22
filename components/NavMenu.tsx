@@ -37,7 +37,7 @@ const NavMenu = () => {
               <Link href="/services/szz">Разработка СЗЗ</Link>
             </MenuItem>
             <MenuItem>
-              <Link href="/services/noise">Расчет шума</Link>
+              <Link href="/services/shum">Расчет шума</Link>
             </MenuItem>
             <MenuItem>
               <Link href="/services/othody">Обращение с отходами</Link>
