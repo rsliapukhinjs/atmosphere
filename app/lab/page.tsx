@@ -14,22 +14,24 @@ export const metadata: Metadata = {
 const Lab = () => {
   return (
     <section className="p-8 flex flex-col items-center bg-gradient-to-b from-white to-sky-100 gap-8 text-sky-800">
-      <div className="w-full xl:w-1/2">
-        <Image src={lab} alt="Laboratory" />
-      </div>
-      <h1 className="text-2xl text-center">Химическая лаборатория</h1>
-      <div className="p-8 w-full lg:w-2/3 bg-white rounded-lg text-xs md:text-sm">
-        <p>
-          &#9;ОДО &laquo;Атмосфера&raquo; имеет в своем составе современную
-          химическую лабораторию с широким перечнем оборудования для
-          исследования количественного состава выбросов загрязняющих веществ в
-          атмосферный воздух, проведения аэродинамических испытаний систем
-          вентиляции с преобладанием точных и чувствительных методов
-          фотометрического, электрохимического, хроматографического,
-          гравиметрического анализа, позволяющих получать точные и достоверные
-          результаты измерений.
-        </p>
-      </div>
+      <article className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-8">
+        <div className="">
+          <Image src={lab} alt="Laboratory" />
+        </div>
+        <div className="p-8 w-full bg-white rounded-lg text-xs md:text-sm flex flex-col justify-center gap-8">
+          <h1 className="text-2xl text-center">Химическая лаборатория</h1>
+          <p>
+            &#9;ОДО &laquo;Атмосфера&raquo; имеет в своем составе современную
+            химическую лабораторию с широким перечнем оборудования для
+            исследования количественного состава выбросов загрязняющих веществ в
+            атмосферный воздух, проведения аэродинамических испытаний систем
+            вентиляции с преобладанием точных и чувствительных методов
+            фотометрического, электрохимического, хроматографического,
+            гравиметрического анализа, позволяющих получать точные и достоверные
+            результаты измерений.
+          </p>
+        </div>
+      </article>
 
       <LabAccordion />
     </section>

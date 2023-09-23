@@ -26,10 +26,10 @@ const HeroServices = () => {
             <h2>Вентиляция и ГОУ</h2>
           </article>
         </Link>
-        <Link href="/services/project">
+        <Link href="/services/passport">
           <article className="flex flex-col items-center gap-4 border-2 rounded-lg p-4 hover:bg-emerald-800 hover:text-white cursor-pointer">
             <FaMap size={50} />
-            <h2>Проектная документация</h2>
+            <h2>Экологические паспорта</h2>
           </article>
         </Link>
         <Link href="/services/szz">

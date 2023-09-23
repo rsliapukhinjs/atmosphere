@@ -46,7 +46,7 @@ const ServicesForm = () => {
         <select
           name="service"
           id="service"
-          className="opacity-70 text-sky-800 text-xs lg:text-lg"
+          className="opacity-70 text-sky-800 text-xs xl:text-lg"
           placeholder="Вид работ"
           required
         >
@@ -65,7 +65,7 @@ const ServicesForm = () => {
         <input
           type="text"
           id="phone"
-          className="opacity-70 text-sky-800 text-xs lg:text-lg"
+          className="opacity-70 text-sky-800 text-xs xl:text-lg"
           name="phone"
           placeholder="Телефон"
           required
