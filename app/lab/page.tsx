@@ -13,12 +13,12 @@ export const metadata: Metadata = {
 
 const Lab = () => {
   return (
-    <section className="p-8 flex flex-col items-center bg-gradient-to-b from-white to-sky-100 gap-8 text-sky-800">
+    <section className="min-h-screen p-8 flex flex-col items-center bg-gradient-to-b from-white to-sky-100 gap-8 text-sky-800">
       <article className="flex flex-col items-center lg:grid lg:grid-cols-2 gap-8">
         <div className="">
           <Image src={lab} alt="Laboratory" />
         </div>
-        <div className="p-8 w-full bg-white rounded-lg text-xs md:text-sm flex flex-col justify-center gap-8">
+        <div className="p-8 h-full w-full bg-white rounded-lg text-xs md:text-sm flex flex-col justify-center gap-8">
           <h1 className="text-2xl text-center">Химическая лаборатория</h1>
           <p>
             &#9;ОДО &laquo;Атмосфера&raquo; имеет в своем составе современную
